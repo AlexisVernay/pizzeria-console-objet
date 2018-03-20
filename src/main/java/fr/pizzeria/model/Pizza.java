@@ -54,5 +54,21 @@ public class Pizza {
 		public void setPrix(double prix) {
 			this.prix = prix;
 		}
+		
+		public boolean equals(Object object) {
+			// Permet de vérifier à la fois que object est non NULL
+			// et que c'est une instance de Pizza
+			if (!(object instanceof Pizza)){
+				return false;
+			}
+			Pizza other = (Pizza)object;
+			
+			if (this.code.equals(other.getCode())
+				&& this.libelle.equals(other.getLibelle())
+				&& this.prix==other.getPrix()){
+					return true;
+				}
+			return false;
+		}
 
 }
