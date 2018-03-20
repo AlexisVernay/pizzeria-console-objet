@@ -5,24 +5,18 @@ import java.util.List;
 import java.util.Scanner;
 
 import fr.pizzeria.model.Pizza;
+import fr.pizzeria.model.PizzaMemDao;
 
-public class PizzeriaAdminConsoleApp {
+public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 	public static void main(String[] args) {
-		List<Pizza> pizzaList = new ArrayList<>();
-		pizzaList.add(new Pizza(0, "PEP", "Pépéronie", 12.50));
-		pizzaList.add(new Pizza(1, "MAR", "Margherita", 14.00));
-		pizzaList.add(new Pizza(2, "REIN", "La Reine", 11.50));
-		pizzaList.add(new Pizza(3, "FRO", "La 4 fromages", 12.00));
-		pizzaList.add(new Pizza(4, "CAN", "La canniblae", 12.50));
-		pizzaList.add(new Pizza(5, "SAV", "La savoyarde", 13.00));
-		pizzaList.add(new Pizza(6, "ORI", "L'orientale", 13.50));
-		pizzaList.add(new Pizza(7, "IND", "L'indienne", 14.00));
 
+		PizzaMemDao pizzaList = new PizzaMemDao();
+		
 		menu();
 
 		Scanner choiceUser = new Scanner(System.in);
 		int choice = 0;	
-		int nbTab = 8;
+		
 		String code, libelle;
 		double prix;
 		
@@ -32,22 +26,11 @@ public class PizzeriaAdminConsoleApp {
 			{
 				case 1:
 					System.out.println("Liste des pizzas \n");
-					for(int i = 0; i < pizzaList.size(); i++) {
-						if(pizzaList.get(i) != null) {
-							System.out.println(pizzaList.get(i).getCode() 
-									+ " -> " + pizzaList.get(i).getLibelle() 
-									+ " (" + pizzaList.get(i).getPrix() + " €)");
-						}
-					}
-					menu();
-					
+					pizzaList.findAllPizzas();
+					menu();					
 					break;
 				case 2:
-					for(int i = 0; i < pizzaList.size() - 1; i++) {
-						if(pizzaList.get(i) != null) {
-							nbTab++;
-						}
-					}
+					pizzaList.findAllPizzas();
 					System.out.println("Veuillez saisir le code : \n");
 					code = choiceUser.next();
 					System.out.println("Veuillez saisir le nom (sans espace) : \n");
@@ -56,19 +39,13 @@ public class PizzeriaAdminConsoleApp {
 					prix = Double.parseDouble(choiceUser.next());
 					System.out.println("Ajout d'une nouvelle pizza \n");
 
-					pizzaList.add(new Pizza(code, libelle, prix));	
+					pizzaList.saveNewPizza(new Pizza(code, libelle, prix));	
 					
 					menu();
 					break;
 				case 3:
 					System.out.println("Veuillez choisir le code de la pizza à modifier. \n");
-					for(int i = 0; i < pizzaList.size(); i++) {
-						if(pizzaList.get(i) != null) {
-							System.out.println(pizzaList.get(i).getCode() 
-									+ " -> " + pizzaList.get(i).getLibelle() 
-									+ " (" + pizzaList.get(i).getPrix() + " €)");
-						}
-					}
+					System.out.println(pizzaList.findAllPizzas());
 					
 					code = choiceUser.next();
 					System.out.println("Veuillez saisir le nouveau code \n");
@@ -78,33 +55,27 @@ public class PizzeriaAdminConsoleApp {
 					System.out.println("Veuillez saisir le nouveau prix \n");
 					Double newPrix = Double.parseDouble(choiceUser.next());
 				
-					for(int i = 0; i < pizzaList.size(); i++) {
+					/*for(int i = 0; i < pizzaList.size(); i++) {
 						if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(code)) {
 							pizzaList.get(i).setCode(newCode);
 							pizzaList.get(i).setLibelle(newLibelle);
 							pizzaList.get(i).setPrix(newPrix);
 						}
-					}
+					}*/
 					
 					menu();
 					break;
 				case 4:
 					System.out.println("Veuillez choisir le code de la pizza à supprimer : \n");
-					for(int i = 0; i < pizzaList.size(); i++) {
-						if(pizzaList.get(i) != null) {
-							System.out.println(pizzaList.get(i).getCode() 
-									+ " -> " + pizzaList.get(i).getLibelle() 
-									+ " (" + pizzaList.get(i).getPrix() + " €)");
-						}
-					}
+					System.out.println(pizzaList.findAllPizzas());
 					
 					code = choiceUser.next();
-					for(int i = 0; i < pizzaList.size(); i++) {
+					/*for(int i = 0; i < pizzaList.size(); i++) {
 						if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(code)) {
 							pizzaList.remove(i);
 						}		
 					}
-					
+					*/
 					menu();
 					break;
 				case 99:
