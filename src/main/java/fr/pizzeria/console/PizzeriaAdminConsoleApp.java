@@ -3,38 +3,41 @@ package fr.pizzeria.console;
 import java.util.Scanner;
 
 public class PizzeriaAdminConsoleApp {
-
-	public static void main(String[] args) {
-		
-		switch(menu())
+	public static void main(String[] args) {	
+		menu();
+	}
+	
+	public static void list(int choice)
+	{
+		switch(choice)
 		{
 		case 1:
-			System.out.println("Liste des pizzas");
-			main(args);
+			System.out.println("Liste des pizzas \n");
+			menu();
 			break;
 		case 2:
-			System.out.println("Ajout d'une nouvelle pizza");
-			main(args);
+			System.out.println("Ajout d'une nouvelle pizza \n");
+			menu();
 			break;
 		case 3:
-			System.out.println("Mise à jour d’une pizza");
-			main(args);
+			System.out.println("Mise à jour d’une pizza \n");
+			menu();
 			break;
 		case 4:
-			System.out.println("Suppression d'une pizza");
-			main(args);
+			System.out.println("Suppression d'une pizza \n");
+			menu();
 			break;
 		case 99:
-			System.out.println("Aurevoir ☹");
+			System.out.println("Aurevoir ☹ \n");
 			break;	
 		default:
-			System.out.println("Le numéro n'est pas attribué");
-			main(args);
+			System.out.println("Le numéro n'est pas attribué \n");
+			menu();
 			break;
 		}
 	}
 	
-	public static int menu() 
+	public static void menu() 
 	{
 		System.out.println("***** Pizzeria Administration ***** \n"
 					+ "1. Lister les pizzas \n"
@@ -45,9 +48,6 @@ public class PizzeriaAdminConsoleApp {
 			
 		Scanner choiceUser = new Scanner(System.in);
 		int choice = choiceUser.nextInt();
-		return choice;
+		list(choice);
 	}
-	
-
-
 }
