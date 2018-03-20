@@ -6,7 +6,7 @@ import fr.pizzeria.model.Pizza;
 
 public class PizzeriaAdminConsoleApp {
 	public static void main(String[] args) {
-		Pizza[] pizzaArray = new Pizza[8];
+		Pizza[] pizzaArray = new Pizza[100];
 		pizzaArray[0] = new Pizza(0, "PEP", "Pépéroni", 12.50);
 		pizzaArray[1] = new Pizza(1, "MAR", "Margherita", 14.00);
 		pizzaArray[2] = new Pizza(2, "REIN", "La Reine", 11.50);
@@ -19,33 +19,95 @@ public class PizzeriaAdminConsoleApp {
 		menu();
 
 		Scanner choiceUser = new Scanner(System.in);
-		int choice = choiceUser.nextInt();
-
+		int choice = 0;	
+		int nbTab = 8;
+		String code, libelle;
+		double prix;
+		
 		while(choice !=99) {
+			choice = choiceUser.nextInt();
 			switch(choice)
 			{
 				case 1:
 					System.out.println("Liste des pizzas \n");
 					for(int i = 0; i < pizzaArray.length; i++) {
-						System.out.println(pizzaArray[i].getCode() + " -> " + pizzaArray[i].getLibelle() + " (" + pizzaArray[i].getPrix() + ")");
+						if(pizzaArray[i] != null) {
+							System.out.println(pizzaArray[i].getCode() 
+									+ " -> " + pizzaArray[i].getLibelle() 
+									+ " (" + pizzaArray[i].getPrix() + " €)");
+						}
 					}
 					menu();
-					choice = choiceUser.nextInt();
+					
 					break;
 				case 2:
+					for(int i = 0; i < pizzaArray.length - 1; i++) {
+						if(pizzaArray[i] != null) {
+							nbTab++;
+						}
+					}
+					System.out.println("Veuillez saisir le code : \n");
+					code = choiceUser.next();
+					System.out.println("Veuillez saisir le nom (sans espace) : \n");
+					libelle = choiceUser.next();
+					System.out.println("Veuillez saisir le prix : \n");
+					prix = Double.parseDouble(choiceUser.next());
 					System.out.println("Ajout d'une nouvelle pizza \n");
+					
+					nbTab++;
+					pizzaArray[nbTab] = new Pizza(code, libelle, prix);	
+					
 					menu();
-					choice = choiceUser.nextInt();
 					break;
 				case 3:
-					System.out.println("Mise à jour d’une pizza \n");
+					System.out.println("Veuillez choisir le code de la pizza à modifier. \n");
+					for(int i = 0; i < pizzaArray.length; i++) {
+						if(pizzaArray[i] != null) {
+							System.out.println(pizzaArray[i].getCode() 
+									+ " -> " + pizzaArray[i].getLibelle() 
+									+ " (" + pizzaArray[i].getPrix() + " €)");
+						}
+					}
+					
+					code = choiceUser.next();
+					System.out.println("Veuillez saisir le nouveau code \n");
+					String newCode = choiceUser.next();
+					System.out.println("Veuillez saisir le nouveau nom (sans espace) \n");
+					String newLibelle = choiceUser.next();
+					System.out.println("Veuillez saisir le nouveau prix \n");
+					Double newPrix = Double.parseDouble(choiceUser.next());
+				
+					for(int i = 0; i < pizzaArray.length; i++) {
+						if(pizzaArray[i] != null && pizzaArray[i].getCode().equals(code)) {
+							pizzaArray[i].setCode(newCode);
+							pizzaArray[i].setLibelle(newLibelle);
+							pizzaArray[i].setPrix(newPrix);
+						}
+					}
+					
 					menu();
-					choice = choiceUser.nextInt();
 					break;
 				case 4:
-					System.out.println("Suppression d'une pizza \n");
+					System.out.println("Veuillez choisir le code de la pizza à supprimer : \n");
+					for(int i = 0; i < pizzaArray.length; i++) {
+						if(pizzaArray[i] != null) {
+							System.out.println(pizzaArray[i].getCode() 
+									+ " -> " + pizzaArray[i].getLibelle() 
+									+ " (" + pizzaArray[i].getPrix() + " €)");
+						}
+					}
+					
+					code = choiceUser.next();
+					for(int i = 0; i < pizzaArray.length; i++) {
+						if(pizzaArray[i] != null && pizzaArray[i].getCode().equals(code)) {
+							pizzaArray[i] = pizzaArray[i+1];
+							for(int j = i + 1; j < pizzaArray.length - 1; j++){
+								pizzaArray[j] = pizzaArray[j+1];
+							}
+						}		
+					}
+					
 					menu();
-					choice = choiceUser.nextInt();
 					break;
 				case 99:
 					System.out.println("Aurevoir ☹ \n");
@@ -53,7 +115,6 @@ public class PizzeriaAdminConsoleApp {
 				default:
 					System.out.println("Le numéro n'est pas attribué \n");
 					menu();
-					choice = choiceUser.nextInt();
 					break;
 			}
 		}
