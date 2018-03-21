@@ -9,7 +9,8 @@ public class PizzaMemDao implements IPizzaDao {
 		List<Pizza> pizzaList = new ArrayList<>();
 		String code, libelle;
 		double prix;
-	
+		int nbTab = 8;
+		
 	public PizzaMemDao() {
 		pizzaList.add(new Pizza(0, "PEP", "Pépéronie", 12.50));
 		pizzaList.add(new Pizza(1, "MAR", "Margherita", 14.00));
@@ -32,31 +33,56 @@ public class PizzaMemDao implements IPizzaDao {
 		return pizzaList;
 	}
 
-	public void saveNewPizza(Pizza pizza) {	
-		int nbTab = 8;
-		
+	public void saveNewPizza(Pizza pizza) {		
 		for(int i = 0; i < pizzaList.size() - 1; i++) {
 			if(pizzaList.get(i) != null) {
 				nbTab++;
 			}
 		}
-
 		pizzaList.add(pizza);	
 	}
 
 	public void updatePizza(String codePizza, Pizza pizza) {
-		
+		String newCode = pizza.getCode(), newLibelle = pizza.getLibelle(); 
+		Double newPrix = pizza.getPrix();
+		for(int i = 0; i < pizzaList.size(); i++) {
+			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
+				pizzaList.get(i).setCode(newCode);
+				pizzaList.get(i).setLibelle(newLibelle);
+				pizzaList.get(i).setPrix(newPrix);
+			}
+		}
 	}
 
 	public void deletePizza(String codePizza) {
-		
+		for(int i = 0; i < pizzaList.size(); i++) {
+			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
+				pizzaList.remove(i);
+			}		
+		}
 	}
 
 	public Pizza findPizzaByCode(String codePizza) {
+		for(int i = 0; i < pizzaList.size(); i++) {
+			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
+				System.out.println(pizzaList.get(i).getCode() 
+						+ " -> " + pizzaList.get(i).getLibelle() 
+						+ " (" + pizzaList.get(i).getPrix() + " €)");
+			}		
+		}
 		return null;
 	}
 
 	public boolean pizzaExists(String codePizza) {
+		for(int i = 0; i < pizzaList.size(); i++) {
+			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
+				System.out.println("Cette pizza existe");
+				return true;			
+			}
+			else{
+				System.out.println("Cette pizza n'existe pas");
+			}
+		}	
 		return false;
 	}
 

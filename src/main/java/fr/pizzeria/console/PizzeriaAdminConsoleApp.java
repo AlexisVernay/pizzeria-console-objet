@@ -55,13 +55,7 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 					System.out.println("Veuillez saisir le nouveau prix \n");
 					Double newPrix = Double.parseDouble(choiceUser.next());
 				
-					/*for(int i = 0; i < pizzaList.size(); i++) {
-						if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(code)) {
-							pizzaList.get(i).setCode(newCode);
-							pizzaList.get(i).setLibelle(newLibelle);
-							pizzaList.get(i).setPrix(newPrix);
-						}
-					}*/
+					pizzaList.updatePizza(code, new Pizza(newCode, newLibelle, newPrix));	
 					
 					menu();
 					break;
@@ -70,12 +64,15 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 					System.out.println(pizzaList.findAllPizzas());
 					
 					code = choiceUser.next();
-					/*for(int i = 0; i < pizzaList.size(); i++) {
-						if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(code)) {
-							pizzaList.remove(i);
-						}		
-					}
-					*/
+					pizzaList.deletePizza(code);
+					
+					menu();
+					break;		
+				case 5:
+					System.out.println("Trouver pizza");
+					code = choiceUser.next();
+					pizzaList.findPizzaByCode(code);
+					
 					menu();
 					break;
 				case 99:
