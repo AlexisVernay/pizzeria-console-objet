@@ -3,15 +3,10 @@ package fr.pizzeria.console;
 import java.util.Scanner;
 
 import fr.pizzeria.model.PizzaMemDao;
-import fr.pizzeria.service.AjouterPizzaService;
-import fr.pizzeria.service.ListerPizzasService;
 import fr.pizzeria.service.MenuServiceFactory;
-import fr.pizzeria.service.ModifierPizzaService;
-import fr.pizzeria.service.SupprimerPizzaService;
 
 public class PizzeriaAdminConsoleApp extends PizzaMemDao {
-	public static void main(String[] args) {
-	
+	public static void main(String[] args) {	
 		menu();
 
 		Scanner choiceUser = new Scanner(System.in);
@@ -22,32 +17,12 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 		MenuServiceFactory ser = new MenuServiceFactory();
 			
 		while(choice !=99) {
-			choice = choiceUser.nextInt();
-			switch(choice)
-			{
-				case 1:
-					ser.getInstance(choice).executeUC(dao);
-					menu();					
-					break;
-				case 2:
-					ser.getInstance(choice).executeUC(dao);
-					menu();
-					break;
-				case 3:
-					ser.getInstance(choice).executeUC(dao);	
-					menu();
-					break;
-				case 4:
-					ser.getInstance(choice).executeUC(dao);
-					menu();
-					break;		
-				case 99:
-					System.out.println("Aurevoir ☹ \n");
-					break;
-				default:
-					System.out.println("Le numéro n'est pas attribué \n");
-					menu();
-					break;
+			choice = choiceUser.nextInt();		
+			ser.getInstance(choice).executeUC(dao);
+			menu();					
+						
+			if(choice == 99) {
+				System.out.println("Aurevoir ☹ \n");
 			}
 		}
 
