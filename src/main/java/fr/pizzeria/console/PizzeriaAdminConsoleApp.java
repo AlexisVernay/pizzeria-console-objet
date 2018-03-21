@@ -2,6 +2,7 @@ package fr.pizzeria.console;
 
 import java.util.Scanner;
 
+import fr.pizzeria.exception.StockageException;
 import fr.pizzeria.model.PizzaMemDao;
 import fr.pizzeria.service.MenuServiceFactory;
 
@@ -17,8 +18,14 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 		MenuServiceFactory ser = new MenuServiceFactory();
 			
 		while(choice !=99) {
-			choice = choiceUser.nextInt();		
-			ser.getInstance(choice).executeUC(dao);
+			choice = choiceUser.nextInt();	
+				
+			try {
+				ser.getInstance(choice).executeUC(dao);
+			} catch (StockageException e) {
+				System.out.println("Erreur fatale");
+				e.printStackTrace();
+			}
 			menu();					
 						
 			if(choice == 99) {

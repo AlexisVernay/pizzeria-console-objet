@@ -2,6 +2,7 @@ package fr.pizzeria.service;
 
 import java.util.Scanner;
 
+import fr.pizzeria.exception.StockageException;
 import fr.pizzeria.model.PizzaMemDao;
 
 public abstract class MenuService {
@@ -11,7 +12,7 @@ public abstract class MenuService {
 		Scanner choiceUser = new Scanner(System.in);
 		int choice = 0;	
 	
-	public abstract void executeUC(PizzaMemDao dao);
+	public abstract void executeUC(PizzaMemDao dao) throws StockageException;
 		
 	public MenuService() {
 			

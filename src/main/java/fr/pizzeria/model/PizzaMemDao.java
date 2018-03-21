@@ -3,6 +3,10 @@ package fr.pizzeria.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.pizzeria.exception.DeletePizzaException;
+import fr.pizzeria.exception.SavePizzaException;
+import fr.pizzeria.exception.UpdatePizzaException;
+
 public class PizzaMemDao implements IPizzaDao {
 	
 	private 
@@ -26,52 +30,30 @@ public class PizzaMemDao implements IPizzaDao {
 		return pizzaList;
 	}
 
-	public void saveNewPizza(Pizza pizza) {		
+	public void saveNewPizza(Pizza pizza) throws SavePizzaException {
 		pizzaList.add(pizza);	
 	}
 
-	public void updatePizza(String codePizza, Pizza pizza) {
-		String newCode = pizza.getCode(), newLibelle = pizza.getLibelle(); 
-		Double newPrix = pizza.getPrix();
-		for(int i = 0; i < pizzaList.size(); i++) {
-			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
-				pizzaList.get(i).setCode(newCode);
-				pizzaList.get(i).setLibelle(newLibelle);
-				pizzaList.get(i).setPrix(newPrix);
-			}
-		}
+	public void updatePizza(String codePizza, Pizza pizza) throws UpdatePizzaException {
+		pizzaList.remove(findPizzaByCode(codePizza));
+		pizzaList.add(pizza);
 	}
 
-	public void deletePizza(String codePizza) {
-		for(int i = 0; i < pizzaList.size(); i++) {
-			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
-				pizzaList.remove(i);
-			}		
-		}
+	public void deletePizza(String codePizza) throws DeletePizzaException {
+		pizzaList.remove(findPizzaByCode(codePizza));
 	}
 
 	public Pizza findPizzaByCode(String codePizza) {
 		for(int i = 0; i < pizzaList.size(); i++) {
 			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
-				System.out.println(pizzaList.get(i).getCode() 
-						+ " -> " + pizzaList.get(i).getLibelle() 
-						+ " (" + pizzaList.get(i).getPrix() + " €)");
+				return pizzaList.get(i);
 			}		
 		}
 		return null;
 	}
 
-	public boolean pizzaExists(String codePizza) {
-		for(int i = 0; i < pizzaList.size(); i++) {
-			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
-				System.out.println("Cette pizza existe");
-				return true;			
-			}
-			else{
-				System.out.println("Cette pizza n'existe pas");
-			}
-		}	
-		return false;
+	public boolean pizzaExists(String codePizza) {	
+		return findPizzaByCode(codePizza)!=null;
 	}
 
 }
