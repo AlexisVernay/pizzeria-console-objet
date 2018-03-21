@@ -1,80 +1,49 @@
 package fr.pizzeria.console;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-import fr.pizzeria.model.Pizza;
 import fr.pizzeria.model.PizzaMemDao;
+import fr.pizzeria.service.AjouterPizzaService;
+import fr.pizzeria.service.ListerPizzasService;
+import fr.pizzeria.service.ModifierPizzaService;
+import fr.pizzeria.service.SupprimerPizzaService;
 
 public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 	public static void main(String[] args) {
-
-		PizzaMemDao pizzaList = new PizzaMemDao();
-		
+	
 		menu();
 
 		Scanner choiceUser = new Scanner(System.in);
 		int choice = 0;	
 		
-		String code, libelle;
-		double prix;
+		PizzaMemDao dao = new PizzaMemDao();
+		
+		ListerPizzasService list = new ListerPizzasService();
+		AjouterPizzaService add = new AjouterPizzaService();
+		ModifierPizzaService mod = new ModifierPizzaService();
+		SupprimerPizzaService del = new SupprimerPizzaService();
 		
 		while(choice !=99) {
 			choice = choiceUser.nextInt();
 			switch(choice)
 			{
 				case 1:
-					System.out.println("Liste des pizzas \n");
-					pizzaList.findAllPizzas();
+					list.executeUC(dao);
 					menu();					
 					break;
 				case 2:
-					pizzaList.findAllPizzas();
-					System.out.println("Veuillez saisir le code : \n");
-					code = choiceUser.next();
-					System.out.println("Veuillez saisir le nom (sans espace) : \n");
-					libelle = choiceUser.next();
-					System.out.println("Veuillez saisir le prix : \n");
-					prix = Double.parseDouble(choiceUser.next());
-					System.out.println("Ajout d'une nouvelle pizza \n");
-
-					pizzaList.saveNewPizza(new Pizza(code, libelle, prix));	
-					
+					add.executeUC(dao);
 					menu();
 					break;
 				case 3:
-					System.out.println("Veuillez choisir le code de la pizza à modifier. \n");
-					System.out.println(pizzaList.findAllPizzas());
-					
-					code = choiceUser.next();
-					System.out.println("Veuillez saisir le nouveau code \n");
-					String newCode = choiceUser.next();
-					System.out.println("Veuillez saisir le nouveau nom (sans espace) \n");
-					String newLibelle = choiceUser.next();
-					System.out.println("Veuillez saisir le nouveau prix \n");
-					Double newPrix = Double.parseDouble(choiceUser.next());
-				
-					pizzaList.updatePizza(code, new Pizza(newCode, newLibelle, newPrix));	
-					
+					list.executeUC(dao);
+					mod.executeUC(dao);
 					menu();
 					break;
 				case 4:
-					System.out.println("Veuillez choisir le code de la pizza à supprimer : \n");
-					System.out.println(pizzaList.findAllPizzas());
-					
-					code = choiceUser.next();
-					pizzaList.deletePizza(code);
-					
+					del.executeUC(dao);
 					menu();
 					break;		
-				case 5:
-					System.out.println("Trouver pizza");
-					code = choiceUser.next();
-					pizzaList.findPizzaByCode(code);
-					
-					menu();
-					break;
 				case 99:
 					System.out.println("Aurevoir ☹ \n");
 					break;

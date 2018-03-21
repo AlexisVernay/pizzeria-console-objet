@@ -23,22 +23,10 @@ public class PizzaMemDao implements IPizzaDao {
 	}
 	
 	public List<Pizza> findAllPizzas() {
-		for(int i = 0; i < pizzaList.size(); i++) {
-			if(pizzaList.get(i) != null) {
-				System.out.println(pizzaList.get(i).getCode() 
-						+ " -> " + pizzaList.get(i).getLibelle() 
-						+ " (" + pizzaList.get(i).getPrix() + " €)");
-			}
-		}
 		return pizzaList;
 	}
 
 	public void saveNewPizza(Pizza pizza) {		
-		for(int i = 0; i < pizzaList.size() - 1; i++) {
-			if(pizzaList.get(i) != null) {
-				nbTab++;
-			}
-		}
 		pizzaList.add(pizza);	
 	}
 
