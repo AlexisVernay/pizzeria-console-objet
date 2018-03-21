@@ -5,6 +5,7 @@ import java.util.Scanner;
 import fr.pizzeria.model.PizzaMemDao;
 import fr.pizzeria.service.AjouterPizzaService;
 import fr.pizzeria.service.ListerPizzasService;
+import fr.pizzeria.service.MenuServiceFactory;
 import fr.pizzeria.service.ModifierPizzaService;
 import fr.pizzeria.service.SupprimerPizzaService;
 
@@ -18,30 +19,26 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 		
 		PizzaMemDao dao = new PizzaMemDao();
 		
-		ListerPizzasService list = new ListerPizzasService();
-		AjouterPizzaService add = new AjouterPizzaService();
-		ModifierPizzaService mod = new ModifierPizzaService();
-		SupprimerPizzaService del = new SupprimerPizzaService();
-		
+		MenuServiceFactory ser = new MenuServiceFactory();
+			
 		while(choice !=99) {
 			choice = choiceUser.nextInt();
 			switch(choice)
 			{
 				case 1:
-					list.executeUC(dao);
+					ser.getInstance(choice).executeUC(dao);
 					menu();					
 					break;
 				case 2:
-					add.executeUC(dao);
+					ser.getInstance(choice).executeUC(dao);
 					menu();
 					break;
 				case 3:
-					list.executeUC(dao);
-					mod.executeUC(dao);
+					ser.getInstance(choice).executeUC(dao);	
 					menu();
 					break;
 				case 4:
-					del.executeUC(dao);
+					ser.getInstance(choice).executeUC(dao);
 					menu();
 					break;		
 				case 99:
