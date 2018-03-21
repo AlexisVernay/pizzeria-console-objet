@@ -74,8 +74,8 @@ public class Pizza {
 			return false;
 		}
 		
-		public void toString(int id, String code, String libelle, double prix, CategoriePizza cat){
-			return;
+		public String toString(){
+			return this.cat.getCategoriePizza();
 		}
 
 		public CategoriePizza getCategoriePizza() {

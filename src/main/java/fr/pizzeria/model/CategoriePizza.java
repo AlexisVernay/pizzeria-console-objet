@@ -16,5 +16,9 @@ public enum CategoriePizza {
 	public String toString(){
 		return libelle;
 	}
+
+	public String getCategoriePizza() {
+		return libelle;
+	}
 	
 }

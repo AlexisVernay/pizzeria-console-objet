@@ -31,16 +31,16 @@ public class PizzaMemDao implements IPizzaDao {
 		return pizzaList;
 	}
 
-	public void saveNewPizza(Pizza pizza) throws SavePizzaException {
+	public void saveNewPizza(Pizza pizza) {
 		pizzaList.add(pizza);	
 	}
 
-	public void updatePizza(String codePizza, Pizza pizza) throws UpdatePizzaException {
+	public void updatePizza(String codePizza, Pizza pizza) {
 		pizzaList.remove(findPizzaByCode(codePizza));
 		pizzaList.add(pizza);
 	}
 
-	public void deletePizza(String codePizza) throws DeletePizzaException {
+	public void deletePizza(String codePizza) {
 		pizzaList.remove(findPizzaByCode(codePizza));
 	}
 
