@@ -14,10 +14,7 @@ public class SupprimerPizzaService extends MenuService {
 		{			
 			throw new DeletePizzaException("Ce code n'existe pas");
 		}
-		else
-		{
-			dao.deletePizza(code);		
-		}
 		
+		dao.deletePizza(code);			
 	}
 }

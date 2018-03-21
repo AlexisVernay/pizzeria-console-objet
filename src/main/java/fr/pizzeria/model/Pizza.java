@@ -5,22 +5,25 @@ public class Pizza {
 			int id;
 			String code, libelle;
 			double prix;
+			CategoriePizza cat;
 			
-		public Pizza(String code, String libelle, double prix) 
+		public Pizza(String code, String libelle, double prix, CategoriePizza cat) 
 		{
 			id++;
 			this.code = code;
 			this.libelle = libelle;
 			this.prix = prix;
+			this.cat = cat;
 		}
 		
-		public Pizza(int id, String code, String libelle, double prix) 
+		public Pizza(int id, String code, String libelle, double prix, CategoriePizza cat) 
 		{
 			super();
 			this.id = id;
 			this.code = code;
 			this.libelle = libelle;
 			this.prix = prix;
+			this.cat = cat;
 		}
 		
 		public int getId() {
@@ -69,6 +72,18 @@ public class Pizza {
 					return true;
 				}
 			return false;
+		}
+		
+		public void toString(int id, String code, String libelle, double prix, CategoriePizza cat){
+			return;
+		}
+
+		public CategoriePizza getCategoriePizza() {
+			return cat;
+		}
+		
+		public void setCategoriePizza(CategoriePizza cat) {
+			this.cat = cat;
 		}
 
 }

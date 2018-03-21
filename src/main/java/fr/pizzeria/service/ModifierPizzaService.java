@@ -1,6 +1,7 @@
 package fr.pizzeria.service;
 
 import fr.pizzeria.exception.UpdatePizzaException;
+import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 import fr.pizzeria.model.PizzaMemDao;
 
@@ -17,14 +18,14 @@ public class ModifierPizzaService extends MenuService {
 		String newLibelle = choiceUser.next();
 		System.out.println("Veuillez saisir le nouveau prix \n");
 		Double newPrix = Double.parseDouble(choiceUser.next());
-	
-		if(!dao.pizzaExists(newCode))
+		System.out.println("Veuillez saisir la catégorie \n");
+		String newCat = choiceUser.next();
+		
+		if(!dao.pizzaExists(code))
 		{			
 			throw new UpdatePizzaException("Ce code n'existe pas");
 		}
-		else
-		{
-			dao.updatePizza(code, new Pizza(newCode, newLibelle, newPrix));		
-		}		
+
+		dao.updatePizza(code, new Pizza(newCode, newLibelle, newPrix, CategoriePizza.valueOf(newCat)));				
 	}
 }
