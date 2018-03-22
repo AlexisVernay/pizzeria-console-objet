@@ -45,7 +45,7 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 		+ "2. Ajouter une nouvelle pizza \n"
 		+ "3. Mettre à jour une pizza \n"
 		+ "4. Supprimer une pizza \n"
-		+ "5. Imprimer liste des pizza \n"
+		+ "5. Imprimer la liste des pizza \n"
 		+ "99. Sortir \n");
 
 

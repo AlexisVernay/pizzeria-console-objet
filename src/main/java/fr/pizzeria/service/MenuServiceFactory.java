@@ -5,19 +5,19 @@ public class MenuServiceFactory {
 	public MenuService getInstance(int choice){
 		switch(choice){
 		case 1 :
-			ListerPizzasService list = new ListerPizzasService();
+			MenuService list = new ListerPizzasService();
 			return list;
 		case 2 :
-			AjouterPizzaService add = new AjouterPizzaService();
+			MenuService add = new AjouterPizzaService();
 			return add;
 		case 3 :
-			ModifierPizzaService mod = new ModifierPizzaService();
+			MenuService mod = new ModifierPizzaService();
 			return mod;
 		case 4 :
-			SupprimerPizzaService del = new SupprimerPizzaService();
+			MenuService del = new SupprimerPizzaService();
 			return del;
 		case 5 :
-			PrintListPizzaService pri = new PrintListPizzaService();
+			MenuService pri = new PrintListPizzaService();
 			return pri;
 		}
 		return null;
