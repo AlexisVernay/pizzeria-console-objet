@@ -21,4 +21,14 @@ public enum CategoriePizza {
 		return libelle;
 	}
 	
+	public static boolean exists(String chaine){
+		CategoriePizza[] categs = values();
+		
+		for (int i = 0; i < categs.length; i++){
+			if (categs[i].name().equals(chaine)){
+				return true;
+			}
+		}
+		return false;
+	}
 }

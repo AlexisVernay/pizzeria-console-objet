@@ -1,11 +1,19 @@
 package fr.pizzeria.model;
 
+import fr.pizzeria.utils.StringUtils;
+import fr.pizzeria.utils.ToString;
+
 public class Pizza {
-		private
-			int id;
-			String code, libelle;
-			double prix;
-			CategoriePizza cat;
+		
+		private int id;
+		@ToString(separateur = " -> ", upperCase = true)
+		private String code;
+		@ToString(separateur = " ")
+		private String libelle;
+		@ToString(separateur = "€ (")
+		private double prix;
+		@ToString(separateur = ")", upperCase = true)
+		private CategoriePizza cat;
 			
 		public Pizza(String code, String libelle, double prix, CategoriePizza cat) 
 		{
@@ -75,7 +83,7 @@ public class Pizza {
 		}
 		
 		public String toString(){
-			return this.cat.getCategoriePizza();
+			return StringUtils.toStringUtils(this);
 		}
 
 		public CategoriePizza getCategoriePizza() {
