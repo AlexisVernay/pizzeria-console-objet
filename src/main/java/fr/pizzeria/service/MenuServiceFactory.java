@@ -16,6 +16,9 @@ public class MenuServiceFactory {
 		case 4 :
 			SupprimerPizzaService del = new SupprimerPizzaService();
 			return del;
+		case 5 :
+			PrintListPizzaService pri = new PrintListPizzaService();
+			return pri;
 		}
 		return null;
 	}

@@ -1,13 +1,16 @@
 package fr.pizzeria.console;
 
+import java.io.IOException;
 import java.util.Scanner;
+
+import com.itextpdf.text.DocumentException;
 
 import fr.pizzeria.exception.StockageException;
 import fr.pizzeria.model.PizzaMemDao;
 import fr.pizzeria.service.MenuServiceFactory;
 
 public class PizzeriaAdminConsoleApp extends PizzaMemDao {
-	public static void main(String[] args) {	
+	public static void main(String[] args) throws DocumentException, IOException {	
 		menu();
 
 		Scanner choiceUser = new Scanner(System.in);
@@ -42,6 +45,7 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 		+ "2. Ajouter une nouvelle pizza \n"
 		+ "3. Mettre à jour une pizza \n"
 		+ "4. Supprimer une pizza \n"
+		+ "5. Imprimer liste des pizza \n"
 		+ "99. Sortir \n");
 
 

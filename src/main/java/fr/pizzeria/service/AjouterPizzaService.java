@@ -5,6 +5,7 @@ import fr.pizzeria.exception.UpdatePizzaException;
 import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 import fr.pizzeria.model.PizzaMemDao;
+import fr.pizzeria.utils.Validator;
 
 public class AjouterPizzaService extends MenuService {	
 	public void executeUC(PizzaMemDao dao) throws SavePizzaException {
@@ -25,7 +26,13 @@ public class AjouterPizzaService extends MenuService {
 			throw new SavePizzaException("Votre saisie est incorrecte");
 		}
 		
-		dao.saveNewPizza(new Pizza(code, libelle, prix, categorie));	
+		try {
+			Validator.Valid(dao);
+			dao.saveNewPizza(new Pizza(code, libelle, prix, categorie));
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}	
 	}
 
 }
