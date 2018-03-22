@@ -3,10 +3,6 @@ package fr.pizzeria.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.pizzeria.exception.DeletePizzaException;
-import fr.pizzeria.exception.SavePizzaException;
-import fr.pizzeria.exception.UpdatePizzaException;
-
 public class PizzaMemDao implements IPizzaDao {
 	
 	private 

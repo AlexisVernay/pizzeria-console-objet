@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
@@ -25,9 +24,9 @@ public class PrintListPizzaService extends MenuService {
 			PdfWriter.getInstance(document, new FileOutputStream(path));
 			
 			document.open();
-			document.add(new Paragraph("Voici la liste de pizza disponibles :"));
+			document.add(new Paragraph("Voici la liste des pizzas disponibles :"));
 			
-			List list = dao.findAllPizzas();
+			List<Pizza> list = dao.findAllPizzas();
 			for(int i = 0; i < list.size(); i++) {
 				document.add(new Paragraph(dao.findAllPizzas().get(i).toString()));
 			}
@@ -39,10 +38,5 @@ public class PrintListPizzaService extends MenuService {
 		}
 		
 		document.close();
-	}
-
-	private Chunk text(String string) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

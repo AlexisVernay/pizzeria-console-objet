@@ -13,6 +13,7 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 	public static void main(String[] args) throws DocumentException, IOException {	
 		menu();
 
+		@SuppressWarnings("resource")
 		Scanner choiceUser = new Scanner(System.in);
 		int choice = 0;	
 		
@@ -35,7 +36,6 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 				System.out.println("Aurevoir ☹ \n");
 			}
 		}
-
 	}
 
 	public static void menu()

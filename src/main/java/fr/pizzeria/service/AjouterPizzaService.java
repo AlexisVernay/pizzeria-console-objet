@@ -1,7 +1,6 @@
 package fr.pizzeria.service;
 
 import fr.pizzeria.exception.SavePizzaException;
-import fr.pizzeria.exception.UpdatePizzaException;
 import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 import fr.pizzeria.model.PizzaMemDao;
