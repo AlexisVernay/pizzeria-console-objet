@@ -7,7 +7,7 @@ public class SupprimerPizzaService extends MenuService {
 
 	@Override
 	public void executeUC(PizzaMemDao dao) throws DeletePizzaException {
-		System.out.println("Veuillez choisir le code de la pizza à supprimer : \n");	
+		LOG.info("Veuillez choisir le code de la pizza à supprimer : \n");	
 		code = choiceUser.next();
 		
 		if(!dao.pizzaExists(code))

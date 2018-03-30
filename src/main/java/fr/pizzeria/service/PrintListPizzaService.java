@@ -31,7 +31,7 @@ public class PrintListPizzaService extends MenuService {
 				document.add(new Paragraph(dao.findAllPizzas().get(i).toString()));
 			}
 			
-			System.out.println("Votre pdf est généré dans le chemin suivant : " + path);
+			LOG.info("Votre pdf est généré dans le chemin suivant : " + path);
 
 		} catch (Exception e) {
 			e.printStackTrace();

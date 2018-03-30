@@ -9,16 +9,16 @@ public class ModifierPizzaService extends MenuService {
 
 	@Override
 	public void executeUC(PizzaMemDao dao) throws UpdatePizzaException {
-		System.out.println("\nVeuillez choisir le code de la pizza à modifier. \n");
+		LOG.info("\nVeuillez choisir le code de la pizza à modifier. \n");
 		code = choiceUser.next();
 		
-		System.out.println("Veuillez saisir le nouveau code \n");
+		LOG.info("Veuillez saisir le nouveau code \n");
 		String newCode = choiceUser.next();
-		System.out.println("Veuillez saisir le nouveau nom (sans espace) \n");
+		LOG.info("Veuillez saisir le nouveau nom (sans espace) \n");
 		libelle = choiceUser.next();
-		System.out.println("Veuillez saisir le nouveau prix \n");
+		LOG.info("Veuillez saisir le nouveau prix \n");
 		prix = Double.parseDouble(choiceUser.next());
-		System.out.println("Veuillez saisir la catégorie \n");
+		LOG.info("Veuillez saisir la catégorie \n");
 		cat = choiceUser.next();
 		
 		if(!dao.pizzaExists(code))

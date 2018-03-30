@@ -1,5 +1,9 @@
 package fr.pizzeria.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fr.pizzeria.console.PizzeriaAdminConsoleApp;
 import fr.pizzeria.exception.SavePizzaException;
 import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
@@ -7,19 +11,20 @@ import fr.pizzeria.model.PizzaMemDao;
 import fr.pizzeria.utils.Validator;
 
 public class AjouterPizzaService extends MenuService {	
+	
 	public void executeUC(PizzaMemDao dao) throws SavePizzaException {
 		dao.findAllPizzas();
-		System.out.println("Veuillez saisir le code : \n");
+		LOG.info("Veuillez saisir le code : \n");
 		code = choiceUser.next();
-		System.out.println("Veuillez saisir le nom (sans espace) : \n");
+		LOG.info("Veuillez saisir le nom (sans espace) : \n");
 		libelle = choiceUser.next();
-		System.out.println("Veuillez saisir le prix : \n");
+		LOG.info("Veuillez saisir le prix : \n");
 		prix = Double.parseDouble(choiceUser.next());
-		System.out.println("Veuillez saisir la catégorie : \n");
+		LOG.info("Veuillez saisir la catégorie : \n");
 		cat = choiceUser.next();
 		CategoriePizza categorie = CategoriePizza.valueOf(cat);
 		
-		System.out.println("Ajout d'une nouvelle pizza \n");
+		LOG.info("Ajout d'une nouvelle pizza \n");
 		
 		if(prix <= 0){
 			throw new SavePizzaException("Votre saisie est incorrecte");

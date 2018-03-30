@@ -6,7 +6,7 @@ import fr.pizzeria.exception.SavePizzaException;
 import fr.pizzeria.exception.StockageException;
 
 public class Validator {
-	public static void Valid(Object o) throws StockageException {
+	public static void Valid(Object o) {
 		Class<?> cl = o.getClass();	
 		Field[] attributs = cl.getDeclaredFields();
 	
