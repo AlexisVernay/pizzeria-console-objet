@@ -1,14 +1,16 @@
 package fr.pizzeria.service;
 
+import java.util.Scanner;
+
 import fr.pizzeria.exception.UpdatePizzaException;
 import fr.pizzeria.model.CategoriePizza;
+import fr.pizzeria.model.IPizzaDao;
 import fr.pizzeria.model.Pizza;
-import fr.pizzeria.model.PizzaMemDao;
 
 public class ModifierPizzaService extends MenuService {
 
 	@Override
-	public void executeUC(PizzaMemDao dao) throws UpdatePizzaException {
+	public void executeUC(IPizzaDao dao, Scanner scan) throws UpdatePizzaException {
 		LOG.info("\nVeuillez choisir le code de la pizza à modifier. \n");
 		code = choiceUser.next();
 		

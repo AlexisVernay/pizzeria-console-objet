@@ -4,20 +4,21 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 
+import fr.pizzeria.model.IPizzaDao;
 import fr.pizzeria.model.Pizza;
-import fr.pizzeria.model.PizzaMemDao;
 
 public class PrintListPizzaService extends MenuService {
 	public static final ResourceBundle file = ResourceBundle.getBundle("conf");
 	public static final String path = file.getString("path.absolute");
 	
-	public void executeUC(PizzaMemDao dao) throws DocumentException, IOException {	
+	public void executeUC(IPizzaDao dao, Scanner scan) throws DocumentException, IOException {	
 		Document document = new Document();
 		
 		try {

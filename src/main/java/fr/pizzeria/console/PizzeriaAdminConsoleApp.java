@@ -35,7 +35,7 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 			}
 			
 			try {
-				ser.getInstance(choice).executeUC(dao);
+				ser.getInstance(choice).executeUC(dao, new Scanner(System.in));
 			} catch (StockageException e) {
 				LOG.info("Erreur fatale");
 				e.printStackTrace();

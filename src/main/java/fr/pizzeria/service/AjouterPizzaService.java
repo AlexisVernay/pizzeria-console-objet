@@ -1,18 +1,17 @@
 package fr.pizzeria.service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.Scanner;
 
-import fr.pizzeria.console.PizzeriaAdminConsoleApp;
 import fr.pizzeria.exception.SavePizzaException;
 import fr.pizzeria.model.CategoriePizza;
+import fr.pizzeria.model.IPizzaDao;
 import fr.pizzeria.model.Pizza;
 import fr.pizzeria.model.PizzaMemDao;
 import fr.pizzeria.utils.Validator;
 
 public class AjouterPizzaService extends MenuService {	
 	
-	public void executeUC(PizzaMemDao dao) throws SavePizzaException {
+	public void executeUC(IPizzaDao dao, Scanner scan) throws SavePizzaException {
 		dao.findAllPizzas();
 		LOG.info("Veuillez saisir le code : \n");
 		code = choiceUser.next();

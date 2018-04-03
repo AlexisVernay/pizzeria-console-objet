@@ -117,3 +117,266 @@
 
 11:20:04.750 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Aurevoir â˜¹ 
 
+11:26:43.061 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre Ã  jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+11:26:45.130 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre Ã  jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+11:26:47.125 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le code : 
+
+11:26:55.988 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nom (sans espace) : 
+
+11:27:00.876 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le prix : 
+
+11:27:02.797 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catÃ©gorie : 
+
+11:27:16.620 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Ajout d'une nouvelle pizza 
+
+11:27:16.621 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre Ã  jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+11:27:19.942 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre Ã  jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+11:28:28.821 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza Ã  modifier. 
+
+11:28:33.332 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:28:38.340 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:28:41.571 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:28:43.356 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catÃ©gorie 
+
+11:28:46.260 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre Ã  jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+11:28:47.949 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre Ã  jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:46:04.947 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:46:04.955 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:46:04.955 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:46:04.955 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:46:04.955 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:46:04.955 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:46:04.956 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:46:04.956 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza non supprimé
+16:49:28.477 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:49:28.486 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:49:28.486 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:49:28.486 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:49:28.486 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:49:28.487 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:49:28.487 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:49:28.487 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza non supprimé
+16:53:47.751 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:53:47.756 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:53:47.756 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:53:47.756 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:53:47.756 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:53:47.756 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+16:53:47.756 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Pizza bien supprimé
+17:38:28.294 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez choisir le code de la pizza à supprimer : 
+
+17:39:18.993 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez choisir le code de la pizza à supprimer : 
+
+10:33:30.016 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:33:37.477 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+10:33:41.732 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+10:33:44.941 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+10:33:47.109 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+10:37:22.658 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:39:52.008 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:39:52.011 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+10:40:06.539 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:40:06.541 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+10:41:13.461 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:41:13.463 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+10:41:13.463 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+10:41:13.463 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+10:41:13.464 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+10:42:55.539 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:42:55.542 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+10:42:55.542 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+10:42:55.542 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+10:42:55.542 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+10:44:23.371 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:44:23.373 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+10:44:23.373 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+10:44:23.373 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+10:44:23.374 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+10:46:21.379 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+10:46:21.381 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:23:06.295 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:23:06.298 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:23:06.298 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:23:06.298 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:23:06.299 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:25:07.459 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:25:07.461 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:25:07.462 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:25:07.462 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:25:07.462 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:25:18.489 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:25:18.491 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:25:18.491 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:25:18.491 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:25:18.491 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:25:29.565 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:25:29.567 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:25:29.568 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:25:29.568 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:25:29.568 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:25:48.863 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:25:48.866 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:25:48.866 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:25:48.866 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:25:48.866 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:27:13.112 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:27:13.114 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:27:13.115 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:27:13.115 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:27:13.115 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:29:01.816 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:29:01.819 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:29:01.819 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:29:01.819 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:29:01.819 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:29:51.281 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:29:51.283 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:29:51.284 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:29:51.284 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:29:51.284 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+11:31:24.825 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+11:31:24.828 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+11:31:24.828 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+11:31:24.828 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+11:31:24.828 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+

@@ -2,8 +2,9 @@ package fr.pizzeria.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
-public class PizzaMemDao implements IPizzaDao {
+public class PizzaMemDao implements IPizzaDao  {
 	
 	private 
 		List<Pizza> pizzaList = new ArrayList<>();
@@ -32,21 +33,14 @@ public class PizzaMemDao implements IPizzaDao {
 	}
 
 	public void updatePizza(String codePizza, Pizza pizza) {
-		pizzaList.remove(findPizzaByCode(codePizza));
-		pizzaList.add(pizza);
+		if (pizzaList!= null) {
+			Pizza optUpdate = findPizzaByCode(codePizza);
+		}
+		
 	}
 
 	public void deletePizza(String codePizza) {
 		pizzaList.remove(findPizzaByCode(codePizza));
-	}
-
-	public Pizza findPizzaByCode(String codePizza) {
-		for(int i = 0; i < pizzaList.size(); i++) {
-			if(pizzaList.get(i) != null && pizzaList.get(i).getCode().equals(codePizza)) {
-				return pizzaList.get(i);
-			}		
-		}
-		return null;
 	}
 
 	public boolean pizzaExists(String codePizza) {	

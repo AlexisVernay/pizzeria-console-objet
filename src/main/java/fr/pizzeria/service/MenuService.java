@@ -10,6 +10,7 @@ import com.itextpdf.text.DocumentException;
 
 import fr.pizzeria.console.PizzeriaAdminConsoleApp;
 import fr.pizzeria.exception.StockageException;
+import fr.pizzeria.model.IPizzaDao;
 import fr.pizzeria.model.PizzaMemDao;
 
 public abstract class MenuService {
@@ -21,7 +22,7 @@ public abstract class MenuService {
 		int choice = 0;	
 		static final Logger LOG = LoggerFactory.getLogger(PizzeriaAdminConsoleApp.class);	
 		
-	public abstract void executeUC(PizzaMemDao dao) throws StockageException, DocumentException, IOException;
+	public abstract void executeUC(IPizzaDao dao, Scanner scan) throws StockageException, DocumentException, IOException;
 		
 	public MenuService() {
 			
