@@ -380,3 +380,643 @@ Veuillez choisir le code de la pizza � modifier.
 
 11:31:24.828 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la cat�gorie 
 
+14:45:46.422 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza � modifier. 
+
+14:45:46.424 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+14:45:46.425 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+14:45:46.425 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+14:45:46.425 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la cat�gorie 
+
+15:19:47.533 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:20:03.666 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:21:49.022 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:21:54.208 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:23:36.891 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:23:37.238 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'orientale', 13.50, 'POISSON')' at line 1
+Query is:
+INSERT IGNORE pizzas(CODE_PIZZA, LIBELLE_PIZZA, PRIX_PIZZA, CATEGORIE_PIZZA)VALUES('ORI', 'L'orientale', 13.50, 'POISSON');
+15:24:43.644 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:24:43.988 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'orientale', 13.50, 'POISSON')' at line 1
+Query is:
+INSERT IGNORE pizzas(CODE_PIZZA, LIBELLE_PIZZA, PRIX_PIZZA, CATEGORIE_PIZZA) VALUES('ORI', 'L'orientale', 13.50, 'POISSON');
+15:26:05.940 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:26:06.283 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'orientale', 13.50, 'POISSON')' at line 1
+Query is:
+INSERT INTO pizzas(CODE_PIZZA, LIBELLE_PIZZA, PRIX_PIZZA, CATEGORIE_PIZZA) VALUES('ORI', 'L'orientale', 13.50, 'POISSON');
+15:27:24.468 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:27:24.827 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'orientale', 13.50, 'POISSON')' at line 1
+Query is:
+INSERT INTO pizzas(CODE_PIZZA, LIBELLE_PIZZA, PRIX_PIZZA, CATEGORIE_PIZZA) VALUES ('ORI', 'L'orientale', 13.50, 'POISSON');
+15:29:39.857 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:34:55.536 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:34:58.862 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:45:14.607 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:45:14.670 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+Query is:
+IF EXISTS ( SELECT CODE_PIZZA FROM pizzas WHERE CODE_PIZZA = 'PEP');
+15:51:10.493 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:51:10.556 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'BEGIN INSERT INTO pizzas(CODE_PIZZA, LIBELLE_PIZZA, PRIX_PIZZA, CATEGORIE_PIZZA)' at line 1
+Query is:
+IF NOT EXISTS (SELECT CODE_PIZZA FROM pizzas WHERE CODE_PIZZA = 'PEP')BEGIN INSERT INTO pizzas(CODE_PIZZA, LIBELLE_PIZZA, PRIX_PIZZA, CATEGORIE_PIZZA) VALUES ('PEP', 'Pépéronie', 12.50, 'EPICE') END;
+15:55:58.176 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:56:00.646 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+15:56:35.954 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le code : 
+
+15:56:50.526 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nom (sans espace) : 
+
+15:56:58.798 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le prix : 
+
+15:57:02.327 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie : 
+
+15:57:06.263 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Ajout d'une nouvelle pizza 
+
+15:57:06.331 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:03:45.609 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:03:45.671 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(CATEGORIE_PIZZA) varchar(20) NOT NULL)' at line 1
+Query is:
+CREATE TABLE IF NOT EXISTS pizzas(CODE_PIZZA varchar(4) NOT NULL, LIBELLE_PIZZA text(50) NOT NULL, PRIX_PIZZA varchar(10) NOT NULL, UPPER(CATEGORIE_PIZZA) varchar(20) NOT NULL);
+16:05:15.787 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:05:15.849 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(CATEGORIE_PIZZA varchar(20) NOT NULL))' at line 1
+Query is:
+CREATE TABLE IF NOT EXISTS pizzas(CODE_PIZZA varchar(4) NOT NULL, LIBELLE_PIZZA text(50) NOT NULL, PRIX_PIZZA varchar(10) NOT NULL, upper(CATEGORIE_PIZZA varchar(20) NOT NULL));
+16:23:55.776 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:23:58.131 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:24:01.467 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le code : 
+
+16:24:06.016 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nom (sans espace) : 
+
+16:24:09.523 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le prix : 
+
+16:24:11.932 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie : 
+
+16:24:16.854 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Ajout d'une nouvelle pizza 
+
+16:24:16.922 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:27:59.283 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:28:01.074 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:28:03.534 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le code : 
+
+16:28:07.993 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nom (sans espace) : 
+
+16:28:14.784 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le prix : 
+
+16:28:18.216 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie : 
+
+16:28:23.415 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Ajout d'une nouvelle pizza 
+
+16:28:23.525 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:28:25.602 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:28:50.994 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+16:29:01.320 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+16:29:08.232 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+16:29:13.047 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+16:29:15.687 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+16:29:19.374 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:29:22.769 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:30:48.246 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:30:52.465 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+16:30:55.437 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+16:30:59.629 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+16:31:18.575 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+16:31:20.354 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+16:31:23.701 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:31:25.728 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:32:43.566 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:32:45.791 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+16:32:51.250 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+16:32:54.068 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+16:32:57.384 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+16:32:59.275 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+16:33:01.249 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:33:03.335 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:36:59.715 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:37:01.705 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+16:37:05.052 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+16:37:07.627 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+16:37:12.533 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+16:37:14.200 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+16:37:18.467 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:37:20.063 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:39:44.448 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:39:46.695 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:39:53.805 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+16:39:56.893 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+16:40:00.169 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+16:40:06.017 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+16:40:07.323 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+16:40:09.284 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:40:10.911 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:41:01.726 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:41:04.244 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - 
+Veuillez choisir le code de la pizza à modifier. 
+
+16:41:13.908 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau code 
+
+16:41:20.677 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau nom (sans espace) 
+
+16:41:23.786 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir le nouveau prix 
+
+16:41:25.126 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez saisir la catégorie 
+
+16:41:27.952 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:41:29.903 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:41:57.040 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez choisir le code de la pizza à supprimer : 
+
+16:42:00.061 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:02.142 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:27.279 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:30.316 [main] INFO  f.p.console.PizzeriaAdminConsoleApp - Veuillez choisir le code de la pizza à supprimer : 
+
+16:42:32.462 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:33.941 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:52.511 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:53.445 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:53.839 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:54.151 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:54.511 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:54.753 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+16:42:54.991 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+17:01:17.994 [main] INFO  f.p.console.PizzeriaAdminConsoleApp -  
+***** Pizzeria Administration ***** 
+1. Lister les pizzas 
+2. Ajouter une nouvelle pizza 
+3. Mettre à jour une pizza 
+4. Supprimer une pizza 
+5. Imprimer la liste des pizza 
+99. Sortir 
+
+17:01:18.010 [main] ERROR f.p.console.PizzeriaAdminConsoleApp - No suitable driver found for bmmtlfvsi-mysql.services.clever-cloud.com:3306/bmmtlfvsi

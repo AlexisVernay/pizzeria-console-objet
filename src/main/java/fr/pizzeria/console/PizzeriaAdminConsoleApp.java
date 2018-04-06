@@ -9,10 +9,11 @@ import org.slf4j.LoggerFactory;
 import com.itextpdf.text.DocumentException;
 
 import fr.pizzeria.exception.StockageException;
+import fr.pizzeria.model.PizzaDB;
 import fr.pizzeria.model.PizzaMemDao;
 import fr.pizzeria.service.MenuServiceFactory;
 
-public class PizzeriaAdminConsoleApp extends PizzaMemDao {
+public class PizzeriaAdminConsoleApp extends PizzaDB {
 	private static final Logger LOG = LoggerFactory.getLogger(PizzeriaAdminConsoleApp.class);
 	
 	public static void main(String[] args) throws DocumentException, IOException {
@@ -22,7 +23,7 @@ public class PizzeriaAdminConsoleApp extends PizzaMemDao {
 		Scanner choiceUser = new Scanner(System.in);
 		int choice = 0;
 
-		PizzaMemDao dao = new PizzaMemDao();
+		PizzaDB dao = new PizzaDB();
 
 		MenuServiceFactory ser = new MenuServiceFactory();
 

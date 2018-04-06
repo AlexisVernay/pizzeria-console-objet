@@ -2,7 +2,6 @@ package fr.pizzeria.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class PizzaMemDao implements IPizzaDao  {
 	
@@ -32,6 +31,7 @@ public class PizzaMemDao implements IPizzaDao  {
 		pizzaList.add(pizza);	
 	}
 
+	@SuppressWarnings("unused")
 	public void updatePizza(String codePizza, Pizza pizza) {
 		if (pizzaList!= null) {
 			Pizza optUpdate = findPizzaByCode(codePizza);
